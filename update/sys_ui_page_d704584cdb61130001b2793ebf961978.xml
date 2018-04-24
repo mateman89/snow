@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function logicFunc() {
+ 	var ga = new GlideAjax('dialogHelper');
+ 	ga.addParam('sysparm_name', 'onReject');
+	ga.addParam('sysparm_record', g_form.getUniqueValue());
+ 	ga.addParam('sysparm_reject_reason', r.value);
+ 	ga.getXML();
+	gsftSubmit(gel('sysverb_update_and_stay'));
+  GlideDialogWindow.get().destroy();
+//	g_form.setValue('u_longint_1', r.value);
+//	g_form.setValue('u_choice_1', "Rejected");
+//	gsftSubmit(gel('sysverb_update_and_stay'));
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_167836_timesheet_rejection.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+   Reason of rejection:   <br> </br>
+	   <textarea id="r" name="r" rows="4" cols="50">
+		 
+</textarea>
+
+   <button onclick="logicFunc()">Save</button>
+
+</j:jelly>]]></html>
+        <name>rejection</name>
+        <processing_script><![CDATA[// function logicFunc(){
+
+
+
+// //add your current logic over here
+// var url= "https://dev35077.service-now.com/nav_to.do?uri=x_167836_timesheet_send_leave.do?sys_id="+current.sys_id;
+
+// response.sendRedirect(url);
+// 	gs.info(current.sys_id);
+
+
+// }]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-13 13:38:30</sys_created_on>
+        <sys_id>d704584cdb61130001b2793ebf961978</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name>rejection</sys_name>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>sys_ui_page_d704584cdb61130001b2793ebf961978</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-18 12:41:33</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Leaves" max_length="40" name="x_167836_timesheet_send_leave" type="collection">
+        <element label="Approved" max_length="40" name="approved" read_only="true" type="boolean"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Associate" mandatory="true" max_length="32" name="associate" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Reason\Comment" max_length="255" name="reason_comment" type="string_full_utf8"/>
+        <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="1" label="Type of leave" mandatory="true" max_length="40" name="type_of_leave" type="choice">
+            <choice>
+                <element label="Sick Leave" sequence="0" value="sl"/>
+                <element label="Vacation" sequence="1" value="v"/>
+                <element label="Home office" sequence="2" value="ho"/>
+                <element label="Business Trip" sequence="3" value="bt"/>
+                <element label="Other" sequence="4" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Draft" label="Status" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="Draft" sequence="0" value="Draft"/>
+                <element label="Waiting for approval" sequence="1" value="Waiting_for_approval"/>
+                <element label="Approved" sequence="2" value="Approved"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+            </choice>
+        </element>
+        <element label="Reason of rejection" max_length="40" name="u_longint_1" type="string"/>
+        <index name="index">
+            <element name="associate"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type_of_leave" table="x_167836_timesheet_send_leave" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type_of_leave</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sick Leave</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b886a907db3a030001b2793ebf96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+            <value>sl</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type_of_leave</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vacation</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c86a907db3a030001b2793ebf96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+            <value>v</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type_of_leave</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Home office</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b886a907db3a030001b2793ebf96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+            <value>ho</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type_of_leave</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Trip</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3886a907db3a030001b2793ebf96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+            <value>bt</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type_of_leave</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b486a907db3a030001b2793ebf96193f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type_of_leave</element>
+            <name>x_167836_timesheet_send_leave</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-07 10:16:10</sys_created_on>
+            <sys_id>f486a907db3a030001b2793ebf96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type_of_leave</sys_name>
+            <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+            <sys_update_name>sys_choice_x_167836_timesheet_send_leave_type_of_leave</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-07 10:16:10</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

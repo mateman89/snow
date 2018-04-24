@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_167836_timesheet.ToRollBack</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ToRollBack</name>
+        <script><![CDATA[var ToRollBack = Class.create();
+ToRollBack.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+onRollBack:function() {
+	   var recordReceived = this.getParameter('sysparm_record');
+	   var stateReceived = this.getParameter('sysparm_state');
+	   gs.error(recordReceived);
+	   gs.error(stateReceived);
+	   this._updateRecord(recordReceived, stateReceived);
+   },
+   _updateRecord: function(record, state) {
+	   var gr = new GlideRecord("x_167836_timesheet_send_leave");
+		gr.addQuery("sys_id", record);
+		gr.query();
+		if (gr.next()) {
+			gr.u_choice_1 = state;
+			gr.update();
+		} 
+   },
+    type: 'ToRollBack'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-18 13:19:59</sys_created_on>
+        <sys_id>8d524aa5dba1130001b2793ebf961986</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ToRollBack</sys_name>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>sys_script_include_8d524aa5dba1130001b2793ebf961986</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-18 13:49:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

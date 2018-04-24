@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>start_date</field>
+        <global>true</global>
+        <messages/>
+        <name>Start date before end date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+		if (g_form.getValue('start_date') ==='' || g_form.getValue('end_date') ===''){
+		return;	
+	}
+	
+if (g_form.getValue('start_date') > g_form.getValue('end_date')){
+	
+	alert("End date was before start date, please correct it!");
+
+	g_form.clearValue('end_date');
+	
+	
+}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-19 08:26:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c1702b1db21130001b2793ebf96196b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Start date before end date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>sys_script_client_5c1702b1db21130001b2793ebf96196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-19 11:09:39</sys_updated_on>
+        <table>x_167836_timesheet_send_leave</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

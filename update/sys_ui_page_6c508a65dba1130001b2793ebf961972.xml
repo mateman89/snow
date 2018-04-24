@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function myAction() {
+	var state;
+	if (document.getElementById('s1').checked) {
+		state = "Draft";
+	} else if(document.getElementById('s2').checked) {
+		state = "Waiting_for_approval";
+	}
+	
+	var ga = new GlideAjax('ToRollBack');
+	ga.addParam('sysparm_name', 'onRollBack');
+	ga.addParam('sysparm_record', g_form.getUniqueValue());
+	ga.addParam('sysparm_state', state);
+	ga.getXML();
+	jslog(state);
+	gsftSubmit(gel('sysverb_update_and_stay'));
+	GlideDialogWindow.get().destroy();
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_167836_timesheet_RollBack.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	Rollback to:<br></br><br></br>
+	<input type="radio" id="s1" name="state" value="Draft" checked="checked"> Associate action</input><br></br>
+  <input type="radio" id="s2" name="state" value="Waiting_for_approval"> Manager action</input><br></br><br></br>
+	  
+	  
+<button onclick="myAction()">Save</button>
+</j:jelly>]]></html>
+        <name>RollBack</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-18 13:10:56</sys_created_on>
+        <sys_id>6c508a65dba1130001b2793ebf961972</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>RollBack</sys_name>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>sys_ui_page_6c508a65dba1130001b2793ebf961972</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-18 14:13:12</sys_updated_on>
+    </sys_ui_page>
+</record_update>

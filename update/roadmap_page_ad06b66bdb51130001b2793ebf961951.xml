@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="roadmap_page">
+    <roadmap_page action="INSERT_OR_UPDATE">
+        <color1_choice>sl</color1_choice>
+        <color1_val>#7FBF7F</color1_val>
+        <color2_choice>v</color2_choice>
+        <color2_val>#FF9933</color2_val>
+        <color3_choice>ho</color3_choice>
+        <color3_val>#B8DBFF</color3_val>
+        <color4_choice>bt</color4_choice>
+        <color4_val>#FF4D4D</color4_val>
+        <color5_val>#F18302</color5_val>
+        <isdefault>false</isdefault>
+        <item_color_key>type_of_leave</item_color_key>
+        <item_conditions table="x_167836_timesheet_send_leave">associateISNOTEMPTY^EQ<item endquery="false" field="associate" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </item_conditions>
+        <item_date_field>start_date</item_date_field>
+        <item_short_description>end_date</item_short_description>
+        <item_table>x_167836_timesheet_send_leave</item_table>
+        <lane_condition_table>x_167836_timesheet_send_leave</lane_condition_table>
+        <lane_conditions table="x_167836_timesheet_send_leave">u_choice_1=Approved^EQ<item endquery="false" field="u_choice_1" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </lane_conditions>
+        <lane_item_mapper_table/>
+        <lane_name>associate</lane_name>
+        <lane_table>x_167836_timesheet_send_leave</lane_table>
+        <lane_to_item_map_key>associate</lane_to_item_map_key>
+        <max_fetch_duration>2</max_fetch_duration>
+        <max_fetch_duration_2d>2</max_fetch_duration_2d>
+        <max_items_per_lane>500</max_items_per_lane>
+        <max_items_per_lane_2d>99</max_items_per_lane_2d>
+        <max_lanes>100</max_lanes>
+        <max_lanes_per_road>8</max_lanes_per_road>
+        <min_2d_months>12</min_2d_months>
+        <min_3d_months>12</min_3d_months>
+        <name>Timeline (Visual)</name>
+        <quarter_start_month>1</quarter_start_month>
+        <show_slider>true</show_slider>
+        <sys_class_name>roadmap_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-12 11:58:47</sys_created_on>
+        <sys_id>ad06b66bdb51130001b2793ebf961951</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Timeline (Visual)</sys_name>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>roadmap_page_ad06b66bdb51130001b2793ebf961951</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-12 12:21:10</sys_updated_on>
+    </roadmap_page>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_longint_1" label="Reason of rejection" language="en" table="x_167836_timesheet_send_leave">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_longint_1</element>
+            <help/>
+            <hint/>
+            <label>Reason of rejection</label>
+            <language>en</language>
+            <name>x_167836_timesheet_send_leave</name>
+            <plural>Reason of rejections</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-13 12:09:49</sys_created_on>
+            <sys_id>ff628044db61130001b2793ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reason of rejection</sys_name>
+            <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+            <sys_update_name>sys_documentation_x_167836_timesheet_send_leave_u_longint_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-13 12:09:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

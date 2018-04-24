@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_167836_timesheet_send_leave">start_date&lt;javascript:gs.beginningOfToday()^u_choice_1NOT INApproved,Rejected^EQ<item endquery="false" field="start_date" goto="false" newquery="false" operator="&lt;" or="false" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="false" field="u_choice_1" goto="false" newquery="false" operator="NOT IN" or="false" value="Approved,Rejected"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+alert("Plase note that Start date is before today!");
+}]]></script_true>
+        <set_values/>
+        <short_description>Start date is before today</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-19 11:18:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>118fe275db61130001b2793ebf96195f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Start date is before today</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Timesheet" source="x_167836_timesheet">3daf953edb72030001b2793ebf961905</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Timesheet">3daf953edb72030001b2793ebf961905</sys_scope>
+        <sys_update_name>sys_ui_policy_118fe275db61130001b2793ebf96195f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-19 11:22:56</sys_updated_on>
+        <table>x_167836_timesheet_send_leave</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>
